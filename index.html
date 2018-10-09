@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>UI Definition</title>
+</head>
+<body>
+  <div class="main-container">
+    <!--results-->
+    <div class="results" id="result">
+      <div class="results centerd">
+        <h3>The background color is: <span class="bg"></span></h3>
+        <h3 class="immediately">I'll Change Immediately</h3>
+        <h3 class="keyDownElement">I'm keydown event</h3>
+        <p class="me">I am going to disappear if you press the button and reappear if you press the second button</p>
+      </div> 
+    </div>
+    <!--action-container-->
+    <div class="action-container">
+
+      <div class="input-act">
+          <input type="text" placeholder="Change background color" class="bgElement">
+          <input type="text" placeholder="write something" class="textImi">
+          <input type="text" placeholder="write something" class="keyDownInput">
+      </div>
+
+      <div class="fonts-act">
+         <div class="fontSize"> 
+              <label for="font-size">Change font size</label>
+              <select id="font-size">
+                <option value="16px">16px</option>
+                <option value="18px">18px</option>
+                <option value="20px">20px</option>
+                <option value="22px">22px</option>
+              </select>
+          </div>
+    
+          <div class="colors"> 
+                <label for="color">Change text color</label>
+                <select id="color">
+                  <option value="blue">blue</option>
+                  <option value="red">red</option>
+                  <option value="green">green</option>
+                  <option value="yellow">yellow</option>
+                </select>
+           </div>
+        </div>
+          
+      <div class="hide-show-act">
+          <h3>hide Pragraph</h3>
+          <input type="radio" name="paragraph" id="hidePragraph">
+ 
+          <h3>show Pragraph</h3>
+          <input type="radio" name="paragraph" id="showPragraph">
+      </div>
+
+      <div class="circle">mousemove</div>
+    <!--end action-->
+    </div>
+    <!--page refrashing-->
+    <a href="#" class="refresh btn">Page Refresh</a>
+  </div>
+  <script src="action.js"></script>
+</body>
+</html>
